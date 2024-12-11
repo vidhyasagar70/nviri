@@ -1,0 +1,163 @@
+/* Featured Vendors section */
+.vendors-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.vendors-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vendors-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vendor {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    flex: 1 1 30%;
+}
+
+.vendor img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.vendor-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.vendor-name {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.vendor-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.show-more {
+    color: #007bff;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Existing styles for happy customers section */
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+}
+
+.service-icon3-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    flex: 1 1 30%;
+}
+
+.service-icon3-container:hover {
+    transform: scale(1.05);
+}
+
+.service-icon3 {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.service-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-details h6 {
+    font-size: 1.1em;
+    margin: 10px 0 5px;
+}
+
+.service-details p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+    .vendor {
+        width: 45%;
+    }
+
+    .service-icon3-container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .vendors-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vendor {
+        width: 80%;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-icon3-container {
+        width: 80%;
+    }
+
+    h1, h5 {
+        font-size: 1.5em;
+    }
+
+    .service-icon3 {
+        width: 50px;
+    }
+}
